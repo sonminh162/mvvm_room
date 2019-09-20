@@ -69,7 +69,6 @@ public class UpdateStudentActivity extends AppCompatActivity implements AdapterV
         studentReceived = (Student) getIntent().getSerializableExtra("student");
 
         studentViewModel = ViewModelProviders.of(this).get(StudentViewModel.class);
-
         studentViewModel.getStudentById(studentReceived.getId()).observe(this, new Observer<Student>() {
             @Override
             public void onChanged(Student student) {
@@ -86,14 +85,14 @@ public class UpdateStudentActivity extends AppCompatActivity implements AdapterV
         findViewById(R.id.button_update).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                updateStudent(studentViewModel.getStudentByIdOriginal(studentReceived.getId()));
+                updateStudent(studentReceived);
             }
         });
 
         findViewById(R.id.button_delete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                studentViewModel.deleteStudent(studentViewModel.getStudentByIdOriginal(studentReceived.getId()));
+                studentViewModel.deleteStudent(studentReceived);
             }
         });
     }
