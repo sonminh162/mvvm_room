@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:elevation="@dimen/dp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:textStyle="bold"
+                android:textColor="@color/aliceBlue"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Completed"
+                android:background="@color/navyBlue"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hoang Tung Lam"/>
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Thanh pho Ho Chi Minh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewSubject"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cong nghe thong tin"/>
+
+            <TextView
+                android:id="@+id/textViewBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="27/6/2019"/>
+
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Female"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
